@@ -1,0 +1,25 @@
+@(g: List[Gamers])
+@main("Our gamers") {
+    @nav()
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nick</th>
+                <th>Herois</th>
+                <th>Level</th>
+            </tr>
+
+        </thead>
+        <tbody>
+        @for(i<- g) {
+            <tr>
+                <td>@i.id</td>
+                <td>@i.Nick</td>
+                <td>@i.Herois</td>
+                <td>@i.Level</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
